@@ -59,6 +59,7 @@ that is named color, with the value being the color of your backpack. */
 var backPack = {};
 var item = 'firstPocket';
 backPack[item] = 'chapstick';
+backPack.color = 'brown';
 
 //After you do the above, alert your entire backPack object.
 
@@ -112,7 +113,7 @@ var album = {
   'Ham or Not': 4,
   'Nose of My Neighbor': 3,
   'Sixty Plates': 2,
-  'Mandala': 7
+  'The Worst Thing (I Ever Seriously Considered Doing)': 7
 };
 
 //Now, loop through your album object alerting every song title individually.
@@ -195,7 +196,7 @@ var user2 = {
         email: 'tylermcginnis33@gmail.com',
         birthday: '05/02/1990',
         username: 'tylermcginnis33',
-        sayName: function(){
+        sayName: function() {
             alert('Email is : ' + this.email);
         }
 };
@@ -276,15 +277,12 @@ function makeCard(cardNumber, expirationDate, securityCode) {
 //NEXT PROBLEM
 
 
-
 /* As of this point you should have a makePerson and a makeCard function which returns you either a person or a credit card object.
    Now, create a bindCard function that takes in a person object as its first parameter and a creditcard object as its second parameter.
    Have bindCard merge the two parameters together into a new object which contains all the properties from the person as well as the creditcard. While Object.assign would give you the answer, specRunner requires an answer without using it.
 */
 
 function bindCard(person, creditcard) {
-  person = makePerson();
-  creditcard = makeCard();
   for (var prop in creditcard) {
     person[prop] = creditcard[prop];
   }
