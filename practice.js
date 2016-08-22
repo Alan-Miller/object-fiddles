@@ -24,7 +24,7 @@ var favoriteThings = {
   band: 'Peanut Butter',
   food: 'noodles',
   person: 'Clyde',
-  book: 'Les Mis',
+  book: 'Les Miserables',
   movie: 'Robin Hood',
   holiday: 'all'
 };
